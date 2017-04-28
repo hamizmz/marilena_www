@@ -1,0 +1,74 @@
+/* Abil */
+@font-face {
+	font-family:Fatface;
+	src:url("fonts/AbrilFatface-Regular.ttf");
+}
+
+body {
+	background-color:#fdfefe;
+	/*background-color:#081008;*/
+	color:#588190;
+	font-family:sans-serif;
+	font-size:11px;
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	position:relative;
+	color:#5AAAAD;
+	margin:0 0 1em;
+	
+	font-family:Fatface;
+	font-weight:normal;
+	
+	line-height:1em;
+	letter-spacing:-1px;
+}
+
+article {
+	position:relative;
+	padding:30pt 40pt;
+}
+
+.MaskArea {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	
+	clip-path:url(#svg_path);
+	/*opacity:0;*/
+}
+
+.MaskArea img {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	
+	transition:transform 10s ease-out 0s;
+}
+
+.Text {
+	position:relative;
+	z-index:1;
+	opacity:0.62;
+	fill:#588190;
+	stroke:none;
+}
+
+#overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0.36;
+}
+
+/*.TextMask {
+	position:absolute;
+	top:0;
+	left:0;
+}*/
