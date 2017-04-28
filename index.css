@@ -7,9 +7,9 @@
 body {
 	background-color:#fdfefe;
 	/*background-color:#081008;*/
-	color:#588190;
-	font-family:sans-serif;
-	font-size:11px;
+	color:#444;
+	font-family:Helvetica, OpenSans, Arial, sans-serif;
+	font-size:16px;
 	padding:0;
 	margin:0;
 }
@@ -26,38 +26,19 @@ h1 {
 	letter-spacing:-1px;
 }
 
+a {
+	color:cornflowerblue;
+	text-decoration:none;
+}
+
+p {
+	margin:0 0 20pt;
+	line-height:1.5em;
+}
+
 article {
 	position:relative;
 	padding:30pt 40pt;
-}
-
-.MaskArea {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	z-index:-1;
-	
-	clip-path:url(#svg_path);
-	/*opacity:0;*/
-}
-
-.MaskArea img {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	
-	transition:transform 10s ease-out 0s;
-}
-
-.Text {
-	position:relative;
-	z-index:1;
-	opacity:0.62;
-	fill:#588190;
-	stroke:none;
 }
 
 #overlay {
@@ -67,8 +48,8 @@ article {
 	opacity:0.36;
 }
 
-/*.TextMask {
-	position:absolute;
-	top:0;
-	left:0;
-}*/
+.emoji {
+	position:relative;
+	top:0.25em;
+	font-size:1.5em;
+}
