@@ -1,7 +1,7 @@
 var MAX_FONT_SIZE = 192;
 var FONT_HEIGHT_FACTOR = 2.5;
 var FONT_SCALE_FACTOR = 8;
-var KEN_BURNS_SCALE = 1.5;
+var KEN_BURNS_SCALE = 1.25;
 var KEN_BURNS_SPEED = 0.2;
 var NAME = ["Marilena", "Vlachopoulou"];
 
@@ -22,6 +22,7 @@ function init() {
 			background: document.getElementById("bg"),
 		}
 	});
+	document.getElementById("site_overlay").style.opacity = 0;
 };
 
 function vector(x, y) {
@@ -77,6 +78,7 @@ function within_range(v1, v2, range) {
 
 function kenburns(state) {
 	state.current = add(state.current, state.speed);
+	state.box = scale(state.box, 1.0001);
 	return state;
 };
 
